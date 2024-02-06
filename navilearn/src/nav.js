@@ -47,8 +47,8 @@ const [activeComponent, setActiveComponent] = useState('component4')
         <div className="alignList"> 
         <div className="buttonList"> 
             <button onClick={ ()=> setActiveComponent('component1')} className="navbutton" type="button">Learn</button>
-            <button onClick={ ()=> setActiveComponent('component2')} className="navbutton" type="button">Educate</button>
-            <button onClick={ ()=> setActiveComponent('component3')} className="navbutton" type="button">Help</button>
+            <button onClick={ ()=> setActiveComponent('component2')} className="navbutton2" type="button">Educate</button>
+            <button onClick={ ()=> setActiveComponent('component3')} className="navbutton3" type="button">Help</button>
         </div>
         {activeComponent === 'component1' ? component1() : activeComponent === 'component2' ? component2() : activeComponent === 'component3' ? component3() : component4()}
        
